@@ -17,11 +17,13 @@ Passengers who just exited the elevator, however, must wait until the elevator h
 - Invalid states must be avoided: passengers should never fall into the elevator shaft (enter or leave the elevator before/after it arrives at a floor), get off at the wrong floor, attempt to walk through a closed door, etc.
 - The processes described are required, but you may also create other process definitions if you find it helpful.
 
-# Exercise
+# CSP Description
 
 As as separate document, give CSP code for all processes, assuming an infinite simulation. You may use parametrized process definitions to avoid repeating similar definitions, and you may use recursive definitions instead of iteration if you prefer. Your design should allow for an arbitrary number of passengers. Note that the final system would be defined as the parallel composition of all your processes and `n` instances of your passenger definition.
 
 [Check this out !](./csp-implementation.hs)
+
+# Implementation
 
 The system is implemented in Java. Attempting to be a reasonably literal implementation of the CSP code. That is, you should come up with a general implementation of every CSP operator you use, and then launch threads as your processes. The run methods of these threads then invoke your operators as per their individual process definitions. Your program should accept two command-line arguments:
 
