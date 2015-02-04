@@ -17,6 +17,7 @@ Passengers who just exited the elevator, however, must wait until the elevator h
 - Invalid states must be avoided: passengers should never fall into the elevator shaft (enter or leave the elevator before/after it arrives at a floor), get off at the wrong floor, attempt to walk through a closed door, etc.
 - The processes described are required, but you may also create other process definitions if you find it helpful.
 
+# Exercise
 
 As as separate document, give CSP code for all processes, assuming an infinite simulation. You may use parametrized process definitions to avoid repeating similar definitions, and you may use recursive definitions instead of iteration if you prefer. Your design should allow for an arbitrary number of passengers. Note that the final system would be defined as the parallel composition of all your processes and `n` instances of your passenger definition.
 
