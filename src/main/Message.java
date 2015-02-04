@@ -1,0 +1,3 @@
+package main;
+
+public enum Message {CALLING_ELEVATOR, GETOUT_AT_FLOOR, OPENED_DOOR, CLOSED_DOOR}
