@@ -1,0 +1,496 @@
+/usr/lib/jvm/java-8-oracle/bin/java -Didea.launcher.port=7547 -Didea.launcher.bin.path=/home/ricocheteur/Apps/idea-IU-139.225.3/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/home/ricocheteur/Apps/CSPElevator/out/production/CSPElevator:/home/ricocheteur/Apps/idea-IU-139.225.3/lib/idea_rt.jar com.intellij.rt.execution.application.AppMain com.c4labz.Main
+Invalid args. Running default simulation.
+Passenger #0: Initialized on floor 2
+Passenger #0: waiting for elevator on floor 2...
+Passenger #1: Initialized on floor 1
+Passenger #1: waiting for elevator on floor 1...
+Passenger #2: Initialized on floor 1
+Passenger #2: waiting for elevator on floor 1...
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | [#0]  []
+[]  | [#1, #2]  []
+[]  | []  []
+
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | [#0]  []
+[]  | [#1, #2]  []
+[]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #2 should get in.
+Passenger #1: getting in elevator.
+Passenger #2: getting in elevator.
+Passenger #1: waiting to reach floor 0...
+Passenger #2: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#2]  | [#0]  []
+[]  | []  []
+[#1]  | []  []
+
+Elevator: #2 should get out.
+Elevator: #0 should get in.
+Passenger #0: getting in elevator.
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 2...
+Passenger #0: waiting to reach floor 1...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[]  | [#2]  []
+[#0]  | []  []
+[#1]  | []  []
+
+Elevator: #2 should get in.
+Passenger #2: getting in elevator.
+Passenger #2: waiting to reach floor 0...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | []  []
+[#0]  | []  []
+[#1, #2]  | []  []
+
+Elevator: #1 should get out.
+Elevator: #2 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 0...
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 0...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | []  []
+[#0]  | []  []
+[]  | [#1, #2]  []
+
+Elevator: #1 should get in.
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 2...
+Elevator: #2 should get in.
+Passenger #2: getting in elevator.
+Passenger #2: waiting to reach floor 1...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[#1]  | []  []
+[#0, #2]  | []  []
+[]  | []  []
+
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 1...
+Elevator: #2 should get out.
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[#1]  | []  []
+[]  | [#0, #2]  []
+[]  | []  []
+
+Elevator: #0 should get in.
+Elevator: #2 should get in.
+Passenger #0: getting in elevator.
+Passenger #2: getting in elevator.
+Passenger #0: waiting to reach floor 0...
+Passenger #2: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#1, #2]  | []  []
+[]  | []  []
+[#0]  | []  []
+
+Elevator: #1 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 2...
+Elevator: #2 should get out.
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 2...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[]  | [#1, #2]  []
+[]  | []  []
+[#0]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #2 should get in.
+Passenger #1: getting in elevator.
+Passenger #2: getting in elevator.
+Passenger #1: waiting to reach floor 1...
+Passenger #2: waiting to reach floor 1...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[#1, #2]  | []  []
+[#0]  | []  []
+
+Elevator: #1 should get out.
+Elevator: #2 should get out.
+Passenger #1: getting out of elevator.
+Passenger #2: getting out of elevator.
+Passenger #1: waiting for elevator on floor 1...
+Passenger #2: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[]  | [#1, #2]  []
+[#0]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #2 should get in.
+Passenger #1: getting in elevator.
+Passenger #2: getting in elevator.
+Passenger #1: waiting to reach floor 2...
+Passenger #2: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#1, #2]  | []  []
+[]  | []  []
+[#0]  | []  []
+
+Elevator: #1 should get out.
+Elevator: #2 should get out.
+Passenger #1: getting out of elevator.
+Passenger #2: getting out of elevator.
+Passenger #1: waiting for elevator on floor 2...
+Passenger #2: waiting for elevator on floor 2...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[]  | [#1, #2]  []
+[]  | []  []
+[#0]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #2 should get in.
+Passenger #1: getting in elevator.
+Passenger #2: getting in elevator.
+Passenger #1: waiting to reach floor 0...
+Passenger #2: waiting to reach floor 1...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | []  []
+[#2]  | []  []
+[#0, #1]  | []  []
+
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 0...
+Elevator: #1 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 0...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | []  []
+[#2]  | []  []
+[]  | [#0, #1]  []
+
+Elevator: #0 should get in.
+Elevator: #1 should get in.
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 1...
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 1...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[#2, #0, #1]  | []  []
+[]  | []  []
+
+Elevator: #2 should get out.
+Elevator: #0 should get out.
+Elevator: #1 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 1...
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 1...
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[]  | [#1, #2, #0]  []
+[]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #2 should get in.
+Elevator: #0 should get in.
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 2...
+Passenger #2: getting in elevator.
+Passenger #2: waiting to reach floor 0...
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 0...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[#1]  | []  []
+[]  | []  []
+[#2, #0]  | []  []
+
+Elevator: #2 should get out.
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 0...
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 0...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[#1]  | []  []
+[]  | []  []
+[]  | [#0, #2]  []
+
+Elevator: #0 should get in.
+Elevator: #2 should get in.
+Passenger #2: getting in elevator.
+Passenger #2: waiting to reach floor 1...
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 1...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[#1]  | []  []
+[#2, #0]  | []  []
+[]  | []  []
+
+Elevator: #2 should get out.
+Elevator: #0 should get out.
+Passenger #2: getting out of elevator.
+Passenger #2: waiting for elevator on floor 1...
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[#1]  | []  []
+[]  | [#2, #0]  []
+[]  | []  []
+
+Elevator: #2 should get in.
+Elevator: #0 should get in.
+Passenger #2: getting in elevator.
+Passenger #2: waiting to reach floor 0...
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#1, #0]  | []  []
+[]  | []  []
+[#2]  | []  []
+
+Elevator: #1 should get out.
+Elevator: #0 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 2...
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 2...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[]  | [#1, #0]  []
+[]  | []  []
+[#2]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #0 should get in.
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 1...
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 1...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[#1, #0]  | []  []
+[#2]  | []  []
+
+Elevator: #1 should get out.
+Elevator: #0 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 1...
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[]  | [#1, #0]  []
+[#2]  | []  []
+
+Elevator: #1 should get in.
+Elevator: #0 should get in.
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 0...
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[#0]  | []  []
+[]  | []  []
+[#2, #1]  | []  []
+
+Elevator: #2 should get out.
+Elevator: #1 should get out.
+Passenger #2: getting out of elevator.
+Passenger #1: getting out of elevator.
+Passenger #1: waiting for elevator on floor 0...
+Passenger #2: Max number of trips reached.
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#0]  | []  []
+[]  | []  []
+[]  | [#1]  [#2]
+
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 2...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[]  | [#0]  []
+[]  | []  []
+[]  | [#1]  [#2]
+
+Elevator: #0 should get in.
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 1...
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[#0]  | []  []
+[]  | [#1]  [#2]
+
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: waiting for elevator on floor 1...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  []
+[]  | [#0]  []
+[]  | [#1]  [#2]
+
+Elevator: #0 should get in.
+Passenger #0: getting in elevator.
+Passenger #0: waiting to reach floor 2...
+Elevator: closed on floor 1
+Elevator: going from floor 1 to 2
+Elevator: opened on floor 2
+Elevator: 
+
+[#0]  | []  []
+[]  | []  []
+[]  | [#1]  [#2]
+
+Elevator: #0 should get out.
+Passenger #0: getting out of elevator.
+Passenger #0: Max number of trips reached.
+Passenger #0: Has completed its 10trips.
+Elevator: closed on floor 2
+Elevator: going from floor 2 to 0
+Elevator: opened on floor 0
+Elevator: 
+
+[]  | []  [#0]
+[]  | []  []
+[]  | [#1]  [#2]
+
+Elevator: #1 should get in.
+Passenger #1: getting in elevator.
+Passenger #1: waiting to reach floor 1...
+Elevator: closed on floor 0
+Elevator: going from floor 0 to 1
+Elevator: opened on floor 1
+Elevator: 
+
+[]  | []  [#0]
+[#1]  | []  []
+[]  | []  [#2]
+
+Elevator: #1 should get out.
+Passenger #1: getting out of elevator.
+Passenger #1: Max number of trips reached.
+Passenger #1: Has completed its 10trips.
+Passenger #2: Has completed its 10trips.
+Elevator: interrupted after 33 trips.
